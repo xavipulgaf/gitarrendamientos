@@ -1,0 +1,189 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: houzez\n"
+"POT-Creation-Date: 2017-01-09 17:12+0500\n"
+"PO-Revision-Date: 2017-01-09 17:12+0500\n"
+"Last-Translator: \n"
+"Language-Team: Favethemes <hello@favethemes.com>\n"
+"Language: pt\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.7.4\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_x;esc_html__;esc_html_e;_n;_nx\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: functions/login_register.php:32 functions/login_register.php:105
+#: functions/login_register.php:217
+msgid "The username field is empty."
+msgstr "O campo de utilizador está vazio."
+
+#: functions/login_register.php:36
+msgid "The password field is empty."
+msgstr "O campo de palavra-passe está vazio."
+
+#: functions/login_register.php:40 functions/login_register.php:411
+msgid "Invalid username"
+msgstr "Nome de utilizador inválido."
+
+#: functions/login_register.php:57
+#, php-format
+msgid ""
+"The password you entered for the username <strong>%s</strong> is incorrect."
+msgstr ""
+"A palavra-chave que introduziu para o nome de utilizador <strong>%s</strong> "
+"está incorreta."
+
+#: functions/login_register.php:68
+msgid "Login successful, redirecting..."
+msgstr "Login bem sucedido, redirecionando..."
+
+#: functions/login_register.php:100
+msgid "You need to agree with terms & conditions."
+msgstr "Precisa de concordar com os termos & condições."
+
+#: functions/login_register.php:109 functions/login_register.php:225
+msgid "Minimum 3 characters required"
+msgstr "Mínimo 3 caracteres necessários"
+
+#: functions/login_register.php:113 functions/login_register.php:229
+msgid "Invalid username (do not use special characters or spaces)!"
+msgstr ""
+"Nome de utilizador inválido (não utilize carateres especiais ou espaços)!"
+
+#: functions/login_register.php:117 functions/login_register.php:221
+msgid "This username is already registered."
+msgstr "Este nome de utilizador já está registado."
+
+#: functions/login_register.php:121 functions/login_register.php:233
+msgid "The email field is empty."
+msgstr "O campo de email está vazio."
+
+#: functions/login_register.php:126 functions/login_register.php:238
+msgid "This email address is already registered."
+msgstr "Este endereço de email já está registado."
+
+#: functions/login_register.php:131 functions/login_register.php:243
+msgid "Invalid email address."
+msgstr "Nome de endereço inválido."
+
+#: functions/login_register.php:140
+msgid "One of the password field is empty!"
+msgstr "Um dos campos de palavra-passe está vazio."
+
+#: functions/login_register.php:145
+msgid "Passwords do not match"
+msgstr "Palavras-passe não combinam"
+
+#: functions/login_register.php:165
+msgid "Your account was created and you can login now!"
+msgstr "A sua conta foi criada e agora pode fazer o login!"
+
+#: functions/login_register.php:167
+msgid "An email with the generated password was sent!"
+msgstr "Um email com a palavra-passe gerada foi enviado!"
+
+#: functions/login_register.php:248
+msgid "The passowrd field is empty."
+msgstr ""
+
+#: functions/login_register.php:267
+msgid "Agent account created!"
+msgstr ""
+
+#: functions/login_register.php:322
+msgid "The Email you entered is not valid. Please try again."
+msgstr ""
+
+#: functions/login_register.php:328
+msgid "This Email is already used by another user. Please try a different one."
+msgstr ""
+
+#: functions/login_register.php:344
+msgid "Profile updated"
+msgstr ""
+
+#: functions/login_register.php:396
+msgid "Enter a username or email address."
+msgstr "Introduza um nome de utilizador ou endereço de email."
+
+#: functions/login_register.php:403
+msgid "There is no user registered with that email address."
+msgstr "Não há um utilizador registado com esse endereço de email."
+
+#: functions/login_register.php:427
+msgid "Someone has requested a password reset for the following account:"
+msgstr "Alguém pediu um restauro de palavra-passe para a seguinte conta:"
+
+#: functions/login_register.php:429
+#, php-format
+msgid "Username: %s"
+msgstr "Nome de utilizador: %s"
+
+#: functions/login_register.php:430
+msgid "If this was a mistake, just ignore this email and nothing will happen."
+msgstr "Se isto foi um erro, ignore este email e nada acontecerá."
+
+#: functions/login_register.php:431
+msgid "To reset your password, visit the following address:"
+msgstr "Para restaurar a sua palavra-passe, visite o endereço seguinte:"
+
+#: functions/login_register.php:443
+#, php-format
+msgid "[%s] Password Reset"
+msgstr "[%s] Restauro de Palavra-passe"
+
+#: functions/login_register.php:472
+msgid "The email could not be sent."
+msgstr "Este email não pode ser enviado."
+
+#: functions/login_register.php:472
+msgid "Possible reason: your host may have disabled the mail() function."
+msgstr ""
+"Razão possível: o seu alojamento pode ter desabilitado a função de email()."
+
+#: functions/login_register.php:475
+msgid "Check your email"
+msgstr "Verificar o seu email"
+
+#: functions/roles.php:25
+msgid "Buyer"
+msgstr ""
+
+#: functions/roles.php:35
+msgid "Agency"
+msgstr ""
+
+#: functions/roles.php:62
+msgid "Agent"
+msgstr ""
+
+#: functions/roles.php:89
+msgid "Seller"
+msgstr ""
+
+#: functions/roles.php:106
+msgid "Owner"
+msgstr ""
+
+#: functions/roles.php:125
+msgid "Manager"
+msgstr ""
+
+#~ msgid " The username field is empty."
+#~ msgstr " O campo do nome de utilizador está vazio."
+
+#~ msgid " Minimum 3 characters required"
+#~ msgstr "Mínimo 3 caracteres necessários"
+
+#~ msgid "Houzez Basic User"
+#~ msgstr "Utilizador Básico Houzez"
+
+#~ msgid "Houzez Agent"
+#~ msgstr "Agente Houzez"
+
+#~ msgid "My Partners"
+#~ msgstr "Meus Parceiros"
