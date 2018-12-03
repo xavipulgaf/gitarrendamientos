@@ -1,0 +1,1254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Real Homes Documentation</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Fonts-->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,700italic,800italic,400,600,700,800' rel='stylesheet' type='text/css'>
+
+    <!-- Style Sheet-->
+    <link rel="stylesheet" href="assets/css/bootstrap.css"/>
+    <link rel="stylesheet" href="assets/css/lightbox.css"/>
+    <link rel="stylesheet" href="assets/css/main.css"/>
+
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le fav and touch icons -->
+    <link rel="shortcut icon" href="assets/images/favicon.png" >
+
+</head>
+<body>
+    <div class="container-fluid main-container">
+        <div class="row">
+
+            <div class="col-lg-3 col-md-3 col-sm-4 sidebar-wrapper">
+                <div class="sidebar-inner-wrapper">
+
+                    <div class="title-area">
+                        <h1 class="site-title">Real Homes</h1>
+                        <p class="site-description">By <a target="_blank" href="http://goo.gl/">Inspiry Themes</a></p>
+                    </div>
+
+                    <nav class="nav-main" id="nav" role="navigation">
+                        <ul class="main-menu">
+                            <li>
+                                <a href="#" class="menu-item">
+                                    <span class="main-menu-item">
+                                        <i class="glyphicon glyphicon-cog"></i>Basic Setup<span class="glyphicon glyphicon-chevron-right"></span>
+                                    </span>
+                                </a>
+                                <ul class="sub-menu">
+                                    <li><a class="sub-menu-item" href="#introduction">Introduction</a></li>
+                                    <li><a class="sub-menu-item" href="#install-theme">Install Theme</a></li>
+                                    <li><a class="sub-menu-item" href="#import-xml">Import Demo Contents</a></li>
+                                    <li><a class="sub-menu-item" href="#configure-menus">Configure Menus</a></li>
+                                    <li><a class="sub-menu-item" href="#configure-reading">Configure Reading Settings</a></li>
+                                    <li><a class="sub-menu-item" href="#configure-permalinks">Configure Permalinks Settings</a></li>
+                                </ul>
+                            </li>
+
+                            <li>
+                                <a href="#" class="menu-item">
+                                    <span class="main-menu-item">
+                                        <i class="glyphicon glyphicon-home"></i>Setting Up Homepage<span class="glyphicon glyphicon-chevron-right"></span>
+                                    </span>
+                                </a>
+                                <ul class="sub-menu">
+                                    <li><a class="sub-menu-item" href="#create-home">Create Homepage</a></li>
+                                    <li><a class="sub-menu-item" href="#configure-reading">Configure Reading Settings</a></li>
+                                    <li><a class="sub-menu-item" href="#home-header">Configure Header</a></li>
+                                    <li><a class="sub-menu-item" href="#configure-slider">Configure Slider on Homepage</a></li>
+                                    <li><a class="sub-menu-item" href="#home-google-map">Display Google Map on Homepage</a></li>
+                                    <li><a class="sub-menu-item" href="#home-image-banner">Display Image Banner on Homepage</a></li>
+                                    <li><a class="sub-menu-item" href="#home-search-form">Configure Property Search Form</a></li>
+                                    <li><a class="sub-menu-item" href="#home-slogan">Slogan on Homepage</a></li>
+                                    <li><a class="sub-menu-item" href="#home-properties">Properties on Homepage</a></li>
+                                    <li><a class="sub-menu-item" href="#home-featured-properties">Featured Properties on Homepage</a></li>
+                                    <li><a class="sub-menu-item" href="#home-news-posts">News Posts on Homepage</a></li>
+                                    <li><a class="sub-menu-item" href="#home-footer">Configure Footer</a></li>
+                                </ul>
+                            </li>
+
+                            <li>
+                                <a href="#" class="menu-item">
+                                    <span class="main-menu-item">
+                                        <i class="glyphicon glyphicon-book"></i>Setting Up News Page<span class="glyphicon glyphicon-chevron-right"></span>
+                                    </span>
+                                </a>
+                                <ul class="sub-menu">
+                                    <li><a class="sub-menu-item" href="#create-news">Create News Page</a></li>
+                                    <li><a class="sub-menu-item" href="#configure-reading">Configure Reading Settings</a></li>
+                                </ul>
+                            </li>
+
+                            <li>
+                                <a href="#" class="menu-item">
+                                    <span class="main-menu-item">
+                                        <i class="glyphicon glyphicon-pencil"></i>Add Contents<span class="glyphicon glyphicon-chevron-right"></span>
+                                    </span>
+                                </a>
+                                <ul class="sub-menu">
+                                    <li><a class="sub-menu-item" href="#add-news-pots">Add News Post</a></li>
+                                    <li><a class="sub-menu-item" href="#add-agent">Add Agent</a></li>
+                                    <li><a class="sub-menu-item" href="#add-property">Add Property</a></li>
+                                </ul>
+                            </li>
+
+                            <li>
+                                <a href="#" class="menu-item">
+                                    <span class="main-menu-item">
+                                        <i class="glyphicon glyphicon-file"></i>Create Pages<span class="glyphicon glyphicon-chevron-right"></span>
+                                    </span>
+                                </a>
+                                <ul class="sub-menu">
+                                    <li><a class="sub-menu-item" href="#add-listing-page">Add Properties Listing Page</a></li>
+                                    <li><a class="sub-menu-item" href="#add-gallery">Add Gallery Page</a></li>
+                                    <li><a class="sub-menu-item" href="#add-agents">Add Agents Page</a></li>
+                                    <li><a class="sub-menu-item" href="#add-full-width">Add Full Width Page</a></li>
+                                </ul>
+                            </li>
+
+                            <li>
+                                <a href="#" class="menu-item">
+                                    <span class="main-menu-item">
+                                        <i class="glyphicon glyphicon-envelope"></i>Setting Up Contact Us Page<span class="glyphicon glyphicon-chevron-right"></span>
+                                    </span>
+                                </a>
+                                <ul class="sub-menu">
+                                    <li><a class="sub-menu-item" href="#add-contact">Add Contact Us Page</a></li>
+                                    <li><a class="sub-menu-item" href="#contact-theme-options">Configure Related Theme Options</a></li>
+                                </ul>
+                            </li>
+
+                            <li>
+                                <a href="#" class="menu-item">
+                                    <span class="main-menu-item">
+                                        <i class="glyphicon glyphicon-user"></i>Setting Up Member Pages<span class="glyphicon glyphicon-chevron-right"></span>
+                                    </span>
+                                </a>
+                                <ul class="sub-menu">
+                                    <li><a class="sub-menu-item" href="#set-up-login-register">Set Up Login & Register Page</a></li>
+                                    <li><a class="sub-menu-item" href="#set-up-property-submit">Set Up Submit Property Page</a></li>
+                                    <li><a class="sub-menu-item" href="#set-up-my-properties">Set Up My Properties Page</a></li>
+                                    <li><a class="sub-menu-item" href="#set-up-favorites">Set Up Favorites Page</a></li>
+                                </ul>
+                            </li>
+
+                            <li>
+                                <a href="#" class="menu-item">
+                                    <span class="main-menu-item">
+                                        <i class="glyphicon glyphicon-star"></i>Widgets<span class="glyphicon glyphicon-chevron-right"></span>
+                                    </span>
+                                </a>
+                                <ul class="sub-menu">
+                                    <li><a class="sub-menu-item" href="#twitter-widget">Twitter Widget</a></li>
+                                    <li><a class="sub-menu-item" href="#featured-properties-widget">Featured Properties</a></li>
+                                    <li><a class="sub-menu-item" href="#property-types-widget">Property Types</a></li>
+                                    <li><a class="sub-menu-item" href="#advance-search-widget">Advance Search Widget</a></li>
+                                </ul>
+                            </li>
+
+                            <li>
+                                <a href="#" class="menu-item">
+                                    <span class="main-menu-item">
+                                        <i class="glyphicon glyphicon-leaf"></i>Other Features<span class="glyphicon glyphicon-chevron-right"></span>
+                                    </span>
+                                </a>
+                                <ul class="sub-menu">
+                                    <li><a class="sub-menu-item" href="#idx">dsIDXpress IDX Plugin</a></li>
+                                    <li><a class="sub-menu-item" href="#home-idx-search-widget">dsIDXpress Search Widget on Homepage</a></li>
+                                    <li><a class="sub-menu-item" href="#shortcodes">Shortcodes</a></li>
+                                    <li><a class="sub-menu-item" href="#translation">Translation</a></li>
+                                </ul>
+                            </li>
+
+                            <li>
+                                <a href="#" class="menu-item">
+                                    <span class="main-menu-item">
+                                        <i class="glyphicon glyphicon-edit"></i>Modify Theme<span class="glyphicon glyphicon-chevron-right"></span>
+                                    </span>
+                                </a>
+                                <ul class="sub-menu">
+                                    <li><a class="sub-menu-item" href="#modify-styles">Modify Styles</a></li>
+                                    <li><a class="sub-menu-item" href="#hire-customization">Hire Customization Services</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+
+                </div><!-- inner wrapper -->
+            </div><!-- sidebar wrapper -->
+
+
+            <div class="col-lg-9 col-md-8 col-sm-7">
+
+                <main class="page-content"  role="main">
+                
+                    <article class="hentry" id="introduction">
+                        <div class="entry-content">
+                            <h1 class="entry-title">Introduction</h1>
+                            <p>This documentation is last updated on 10th November 2014.</p>
+                            <p>Thank you for purchasing Real Homes WordPress Theme . If you have any question that is beyond the scope of this documentation, Please feel free to create a support ticket using <a href="http://support.inspirythemes.com/" target="_blank">Our Support Site</a>.</p>
+                            <p class="bg-warning text-warning">
+                                <strong>Disclaimer:</strong><br/> We offer limited support for theme customers. We only provide support for our themes and their core features. We cannot guarantee our themes will work properly with all third party plugins and server environments. If you plan on adding numerous plugins to this theme then please note, We cannot facilitate support for any conflicts that might arise with this theme's default functionality. The Real Homes WordPress theme is presented as it is.
+                            </p><br/>
+                            <h4>Themeforest Item Purchase Code to Signup on Support Site</h4>
+                            <p>Please visit <a target="_blank" href="http://support.inspirythemes.com/knowledgebase/how-to-get-themeforest-item-purchase-code/">this knowledge base article</a> to learn about how to get item purchase code from themeforest to signup on our support site.</p>
+                            <br/>
+                            <h4>Updating WordPress Theme</h4>
+                            <p>If this is a theme update and you want to apply it on your existing installation then please visit <a target="_blank" href="http://support.inspirythemes.com/knowledgebase/better-way-to-update-wordpress-theme/">this knowledge base article</a> to learn about a better way to update your theme</p>
+                            <br/>
+                            <p><strong>If you like this theme, Please support us by rating this theme with 5 stars (<a data-lightbox="how-to-rate-theme" href="how-to-rate-theme.png" >How to rate?</a>)</strong>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <i class="glyphicon glyphicon-star"></i>
+                                <i class="glyphicon glyphicon-star"></i>
+                                <i class="glyphicon glyphicon-star"></i>
+                                <i class="glyphicon glyphicon-star"></i>
+                                <i class="glyphicon glyphicon-star"></i>
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="hentry" id="install-theme">
+                        <div class="entry-content">
+                            <h1 class="entry-title">Install Theme</h1>
+                            <p>In start you must have a working version of WordPress already installed. For information in regard to installing the WordPress CMS, please see the WordPress Codex <a target="_blank" href="http://codex.wordpress.org/Installing_WordPress">Installing WordPress</a></p>
+                            <p>Once you have a working of version of WordPress, you need to download <a data-lightbox="all-files" href="assets/common-images/all-files.png">All Files and Documentation</a> from themeforest and extract the downloaded zip to get various files including <strong>realhomes.zip</strong>.</p>
+
+                            <h4>Step 1: Install Theme Via WordPress Dashboard</h4>
+
+                            <ol>
+                                <li>Go to 'Appearance &gt; Themes' section</li>
+                                <li>Click 'Add New' and select the 'Upload Theme' option
+                                    <br/>
+                                    <br/>
+                                    <img src="assets/realhomes/install/1.png" alt=""/><br/><br/>
+                                    <img src="assets/realhomes/install/1-1.png" alt=""/><br/><br/>
+                                </li>
+                                <li>Choose the <strong>realhomes.zip</strong> file and press 'Install Now'
+                                    <br/>
+                                    <br/>
+                                    <img src="assets/realhomes/install/1-2.png" alt=""/><br/><br/>
+                                </li>
+                                <li>Once the theme is uploaded you need to activate it.<br/>
+                                    <br/>
+                                    <img src="assets/realhomes/install/1-3.png" alt=""/><br/><br/>
+                                </li>
+                                <li>Activating theme will take you to the theme options, <strong>Save the Theme Options Once</strong> So that theme options default values gets stored in the database.</li>
+                            </ol>
+                            <p class="bg-info text-info">
+                                if you face any problem during upload through dashboard, please upload the theme using FTP as guided below.
+                            </p>
+
+
+                            <h3>Step 1(Alternative): Install Theme Via FTP</h3>
+                            <ol>
+                                <li>Access your hosting server using an ftp client like <a target="_blank" href="https://filezilla-project.org/">FileZilla</a></li>
+                                <li>Go to the 'wp-content/themes' folder of your WordPress installation</li>
+                                <li>Extract the <strong>realhomes.zip</strong> file and put the <strong>realhomes</strong> folder in 'wp-content/themes/' folder</li>
+                                <li>Go to 'WordPress Dashboard &gt; Appearance &gt; Themes' section to activate the theme</li>
+                                <li>Activating theme will take you to the theme options, <strong>Save the Theme Options Once</strong> So that theme options default values gets stored in the database.</li>
+                            </ol>
+
+                            <hr/>
+
+                            <h3>Step 2: Install Required Plugins</h3>
+                            After you have installed and activated the theme, plus saved the theme options. Go to <strong>Appearance &gt; Themes</strong> there'll be a message of <strong>required</strong> plugin at the top of the WordPress dashboard. <br><br>
+                            <img src="assets/realhomes/install/2-1.png" alt=""><br><br>
+                            Click on <strong>Begin Installing Plugin</strong> and it will take you to <strong>Appearance &gt; Install Plugins</strong> <br/><br/>
+                            <img src="assets/realhomes/install/2-2.png" alt=""><br><br>
+                            Now, Install the required plugin as demonstrated in animaged gif below. <br/><br/>
+                            <img src="assets/realhomes/install/install-plugins.gif" alt="">
+
+                            <hr/>
+
+                            <h3>Step 3: Install Child Theme</h3>
+                            <p>It is better to use child theme as if you need to modify anything you modify in child theme only. This way you can easily update your parent theme whenever new update becomes available on themeforest. You can read more about child theme from <a target="_blank" href="http://codex.wordpress.org/Child_Themes">here.</a> </p>
+                            <p>To install child theme, you need to upload the <strong>realhomes-child.zip</strong> and activate it in the same way as you uploaded and activated the parent theme's <strong>realhomes.zip</strong>.</p>
+
+                            <hr/>
+
+                            <p><strong>Next Step is to Import Demo Contents</strong></p>
+
+                        </div>
+                    </article>
+
+                    <article class="hentry" id="import-xml">
+                        <div class="entry-content">
+                            <h1 class="entry-title">Import XML for Demo Contents</h1>
+                            <p>Look for <strong>Import XML</strong> folder in unzipped package downloaded from themeforest and use the XML within it.
+                                <br/> Go to the <strong>WordPress Admin &gt; Tools &gt; Import </strong> and click <strong>WordPress</strong> as displayed in image below.</p>
+                            <img src="assets/realhomes/install/4.png" alt=""/><br/><br/>
+                            <p>At 1st time you need to install WordPress importer plugin</p>
+                            <img src="assets/realhomes/install/5.png" alt=""/><br/><br/>
+                            <p>Once installed you need to activate the plugin and run the importer.</p>
+                            <img src="assets/realhomes/install/6.png" alt=""/><br/><br/>
+                            <p>Select the XML file from <strong>Import XML</strong> folder in unzipped package that you have downloaded from themeforest.</p>
+                            <img src="assets/realhomes/install/7.png" alt=""/><br/><br/>
+                            <p>
+                                After importing XML file.
+                                <ol>
+                                    <li>Assign posts to an existing author.</li>
+                                    <li>Mark the checkbox to download and import file attachments</li>
+                                    <li>Click 'Submit' button</li>
+                                </ol>
+                            </p>
+                            <img src="assets/realhomes/install/8.png" alt=""/><br/><br/>
+                            <p>After that is done, you will have bunch of posts, pages, properties and other contents as on the theme demo.</p>
+                            <img src="assets/realhomes/install/9.png" alt=""/><br/><br/>
+
+                            <hr/>
+
+                            <p><strong>Next Step is to Configure Menu</strong></p>
+                        </div>
+                    </article>
+
+                    <article class="hentry" id="configure-menus">
+                        <div class="entry-content">
+                            <h1 class="entry-title">Configure Menus</h1>
+                            <p>Navigate to <strong>Appearance &gt; Menus</strong> and use the Already Imported Menu from XML and assign it to theme location "Main Menu" from <strong>Menu Settings</strong> section below menu. After that save the menu. As pointed in screenshot below.</p>
+                            <img src="assets/realhomes/install/10.png" alt=""/><br/><br/>
+                            <hr/>
+                            <p><strong>Next Step is to Configure Reading Settings</strong></p>
+                        </div>
+                    </article>
+
+                    <article class="hentry" id="create-home">
+                        <div class="entry-content">
+                            <h1 class="entry-title">Create Home Page</h1>
+                            <p class="bg-info text-info">
+                                In case of imported XML the home page is already created and you do not need to follow this section.
+                            </p>
+                            <p>To set up the Home page you need to create a new page,<br/><br/>
+                                Go to <strong>Pages > Add New</strong>. You can give this page a title &quot;Home&quot; yet you do not need to include any contents for now.
+                                <br/><br/> Select the “Home Template” template from the Page Attributes section, as displayed in screen shot below and click <strong>“Publish”</strong>.</p>
+                            <img src="assets/realhomes/pages/1.png" alt=""/><br/><br/>
+                        </div>
+                    </article>
+
+                    <article class="hentry" id="create-news">
+                        <div class="entry-content">
+                            <h1 class="entry-title">Create News Page</h1>
+                            <p class="bg-info text-info">
+                                In case of imported XML the news page is already created and you do not need to follow this section.
+                            </p>
+                            <p>To set up the News page you need to create a new page,<br/><br/>
+                                Go to <strong>Pages > Add New</strong>. You can give this page a title &quot;News&quot; yet you do not need to include any contents for now.
+                                <br/><br/> Select the “Default Template” template from the Page Attributes section, as displayed in screen shot below and click <strong>“Publish”</strong>.</p>
+                            <img src="assets/realhomes/pages/2.png" alt=""/><br/><br/>
+                        </div>
+                    </article>
+
+                    <article class="hentry" id="configure-reading">
+                        <div class="entry-content">
+                            <h1 class="entry-title">Configure Reading Settings</h1>
+                            <p>I am assuming that you have imported the XML successfully and you have home page and news page available for use. If this is not the case then simply create a new page using <strong>Home Template</strong> and name it as Home after that create another page using default template and name it as News.</p>
+                            <p>To configure reading settings you need to visit <strong>WordPress Admin &gt; Settings &gt; Reading</strong> and choose that front page displays as static page. Then select Home as Front Page and News as Posts Page. As, displayed in screen shot below.</p>
+                            <img src="assets/realhomes/install/11.png" alt=""/><br/><br/>
+                            <hr/>
+                            <p><strong>Next Step is to Configure Permalink Settings</strong></p>
+                        </div>
+                    </article>
+
+                    <article class="hentry" id="configure-permalinks">
+                        <div class="entry-content">
+                            <h1 class="entry-title">Configure Permalinks Settings</h1>
+                            <p> To configure permalinks settings visit <strong>WordPress Admin &gt; Settings &gt; Permalinks</strong> and configure it as displayed in image below.</p>
+                            <img src="assets/realhomes/install/13.png" alt=""/><br/><br/>
+                        </div>
+                    </article>
+
+                    <article class="hentry" id="home-header">
+                        <div class="entry-content">
+                            <h1 class="entry-title">Configure Header</h1>
+                            <p>Navigate to <strong>Appearance > Theme Options > Header</strong>, you can configure following things from there.
+                                <ol>
+                                    <li>Upload your website logo image</li>
+                                    <li>Upload your website favicon</li>
+                                    <li>Enable social icons and provide related links</li>
+                                    <li>Provide email address to display in header</li>
+                                    <li>Provide phone number to display in header</li>
+                                    <li>Add any tracking code like Google Analytics</li>
+                                </ol>
+                            </p>
+                            <img src="assets/realhomes/home/1.png" alt=""/><br/><br/>
+                        </div>
+                    </article>
+
+                    <article class="hentry" id="configure-slider">
+                        <div class="entry-content">
+                            <h1 class="entry-title">Configure Slider</h1>
+                            <p>You can feed slider contents from following sources</p>
+                            <ol>
+                                <li><strong>Properties Custom Post Type</strong> - It will attach properties to your slides ( Very easy to use )</li>
+                                <li><strong>Revolution Slider</strong> - You can add text,images, buttons and videos the way you want. ( Little difficult to use but awesome results )</li>
+                                <li><strong>Slides Custom Post Type</strong> -  You can attach a simple image to your slide with related text data ( easy to use with results similar to properties based slider )</li>
+                            </ol>
+                            <img src="assets/realhomes/slider/1.png" alt=""/>
+                            <hr/>
+
+                            <h3>1. Properties Based Slider</h3>
+                            <p>Visit the Theme Options and choose <strong>"Display Slider Based on Properties Custom Post Type"</strong> as displayed in screenshot below.</p>
+                            <img class="light-border" src="assets/realhomes/slider/3.png" alt="" />
+                            <br/><br/>
+                            <p>If you want to include a property in homepage slider, Then you need to edit that property and there is a metabox field in property edit page titled <strong>"Add in Homepage slider"</strong>. Select <strong>Yes</strong> and provide slider image as required by <strong>Slider Image</strong> field below it.</p>
+                            <img class="light-border" src="assets/realhomes/slider/2.png" alt="" />
+                            <br/><br/>
+                            <hr/>
+
+                            <h3>2. Revolution Slider</h3>
+                            <p>
+                                Look for the folder name <strong>Plugins/Revolution Slider</strong> in unzipped package downloaded from themeforest.net. This folder will contain revolution slider's plugin zip, documentation and demo slider import zip.
+                                You need to go to <strong>Plugins > Add New</strong> in your WordPress admin side and upload the <strong>revslider.zip</strong> as displayed in image below
+                            </p>
+                            <br/>
+                            <img src="assets/realhomes/slider/4.png" alt=""/><br/><br/>
+                            <p>Once installed, you need to activate the plugin as displayed in screen-shot below.</p>
+                            <img src="assets/realhomes/slider/5.png" alt=""/><br/><br/>
+                            <p>Once activated you need to visit <strong>Revolution Slider</strong> in left sidebar and click import slider as displayed in screen-shot below. You need to choose the <strong>realhomes.zip</strong> file from <strong>Plugins/Revolution Slider/Import Zip</strong> folder.</p>
+                            <img src="assets/realhomes/slider/6.png" alt=""/><br/><br/>
+                            <img src="assets/realhomes/slider/7.png" alt=""/><br/><br/>
+                            <p>After import you will have a demo slider available for use.</p>
+                            <img class="light-border" src="assets/realhomes/slider/8.png" alt=""/><br/><br/>
+                            <p>Now, you can use that slider <strong>alias</strong> in theme options and select the related settings, As displayed in image below</p>
+                            <img src="assets/realhomes/slider/9.png" alt=""/><br/><br/>
+                            <hr/>
+
+                            <h3>3. Slides Custom Post Type Based Slider</h3>
+                            <p>To display slider based on slides custom post type, You need to add new slides as displayed in screenshot below.</p>
+                            <img class="light-border" src="assets/realhomes/slider/10.png" alt=""/><br/><br/>
+                            <p>After adding slides, you need to visit the Theme Options and choose the <strong>"Display Slider Based on Slides Custom Post Type"</strong> as displayed in screenshot below.</p>
+                            <img class="light-border" src="assets/realhomes/slider/11.png" alt=""/><br/><br/>
+                        </div>
+                    </article>
+
+                    <article class="hentry" id="home-google-map">
+                        <div class="entry-content">
+                            <h1 class="entry-title">Display Google Map on Homepage</h1>
+                            <p>Adding google map on homepage is super simple as properties already have their locations stored in database. So, you just need to enable the feature from theme options as displayed in image below.</p>
+                            <img src="assets/realhomes/slider/12.png" alt=""/><br/><br/>
+                        </div>
+                    </article>
+
+                    <article class="hentry" id="home-image-banner">
+                        <div class="entry-content">
+                            <h1 class="entry-title">Display Image Banner on Homepage</h1>
+                            <p>Please visit the theme options and choose to <strong>"Display Simple Image Based Banner"</strong> </p>
+                            <img class="light-border" src="assets/realhomes/slider/13.png" alt=""/><br/><br/>
+                            <p>After that you can provide the banner image for overall site from <strong>Theme Options > Header Styles</strong> as displayed in screen shot below.</p>
+                            <img class="light-border" src="assets/realhomes/slider/15.png" alt=""/><br/><br/>
+                            <p><strong>OR</strong> you can provide the banner image for homepage only by editing homepage and using <strong>Top Banner Area Settings</strong> meta box, as displayed in screen shot below.</p>
+                            <img class="light-border" src="assets/realhomes/slider/14.png" alt=""/><br/><br/>
+                        </div>
+                    </article>
+
+                    <article class="hentry" id="home-search-form">
+                        <div class="entry-content">
+                            <h1 class="entry-title">Configure Property Search Form</h1>
+                            <p class="text-info bg-info">
+                                You need to <strong>configure permalinks settings</strong> from <strong>Basic Setup Menu</strong> before moving with this section.
+                            </p>
+                            <p>Follow the steps below to configure the search functionality.<br/>
+                                <strong>1.</strong> Create a Property Search Page Using <strong>Property Search Template</strong> ( In case of Imported XML the page is already created ).</p>
+                            <img src="assets/realhomes/slider/16.png" alt=""/><br/><br/>
+                            <p><strong>2.</strong> Copy the URL of Property Search Page and use it in <strong>Theme Options >> Home Search >> Search Page URL</strong> As displayed in screen shot below.</p>
+                            <img src="assets/realhomes/slider/17.png" alt=""/><br/><br/>
+                            <p>After that you will have a property search form displayed on homepage. Now, you can also use the <strong>RealHomes - Advance Search Widget</strong> in sidebar as that widget uses the same configurations.</p>
+                        </div>
+                    </article>
+
+                    <article class="hentry" id="home-slogan">
+                        <div class="entry-content">
+                            <h1 class="entry-title">Slogan on Homepage</h1>
+                            <p>Navigate to <strong>Appearance > Theme Options > Home Others</strong>, there you can provide the slogan title and text in related options.</p>
+                            <img src="assets/realhomes/home/2.png" alt=""/><br/><br/>
+                            <p>Save the theme options after adding the information.</p>
+                        </div>
+                    </article>
+
+                    <article class="hentry" id="home-properties">
+                        <div class="entry-content">
+                            <h1 class="entry-title">Properties on Homepage</h1>
+                            <p>Navigate to <strong>Appearance > Theme Options > Home Others</strong>, there you can filter and sort the properties that you want to display on homepage..</p>
+                            <img class="light-border" src="assets/realhomes/home/3.png" alt=""/><br/><br/>
+                            <p>Save the theme options after making the changes.</p>
+                        </div>
+                    </article>
+
+                    <article class="hentry" id="home-featured-properties">
+                        <div class="entry-content">
+                            <h1 class="entry-title">Featured Properties on Homepage</h1>
+                            <p>Navigate to <strong>Appearance > Theme Options > Home Others</strong>, There you can configure the featured properties related settings for homepage..</p>
+                            <img class="light-border" src="assets/realhomes/home/4.png" alt=""/><br/><br/>
+                            <p>Save the theme options after making the changes.</p>
+                        </div>
+                    </article>
+
+                    <article class="hentry" id="home-news-posts">
+                        <div class="entry-content">
+                            <h1 class="entry-title">News Posts on Homepage</h1>
+                            <p>Navigate to <strong>Appearance > Theme Options > Home Others</strong>, There you can configure the news posts related settings for homepage..</p>
+                            <img class="light-border" src="assets/realhomes/home/7.png" alt=""/><br/><br/>
+                            <p>Save the theme options after making the changes.</p>
+                        </div>
+                    </article>
+
+                    <article class="hentry" id="home-footer">
+                        <div class="entry-content">
+                            <h1 class="entry-title">Configure Footer</h1>
+                            <p>Navigate to <strong>Appearance > Theme Options > Footer</strong>, There you can configure the footer related theme options.</p>
+                            <img class="light-border" src="assets/realhomes/home/5.png" alt=""/><br/><br/>
+                            <p>Save the theme options after making the changes.</p>
+                            <p>If you want to display partners carousel in footer then enable related theme options as displayed in screen shot above. After enabling partners carousel you need to add the partners from <strong>Partners > Add New</strong> as displayed in screen shot below.</p>
+                            <img class="light-border" src="assets/realhomes/home/6.png" alt=""/><br/><br/>
+                        </div>
+                    </article>
+
+                    <article class="hentry" id="add-news-pots">
+                        <div class="entry-content">
+                            <h1 class="entry-title">Add News Post</h1>
+
+                            Go to <strong>WordPress Admin &gt; Posts &gt; Add New</strong>
+                            <ol>
+                                <li>Provide the post title <br/><br/>
+                                    <img src="assets/realhomes/contents/3.1.png" alt=""/><br/><br/></li>
+                                <li>
+                                    Select the related post format <br/><br/>
+                                    <img src="assets/realhomes/contents/3.png" alt=""/><br/><br/>
+                                    <p class="bg-info text-info">
+                                        <strong>Post Formats and Related Meta Boxes:</strong><br/>
+                                        This theme supports various post formats. So, when you select a post format look out for related meta boxes that will appear after your selection. You need to fill out those meta boxes with related information, so that your post can appear in best possible design.
+                                    </p>
+                                </li>
+                                <li>Provide the post contents<br/><br/>
+                                    <img src="assets/realhomes/contents/2.png" alt=""/><br/><br/></li>
+                                <li>Add or select the related category<br/><br/>
+                                    <img src="assets/realhomes/contents/3.2.png" alt=""/><br/><br/></li>
+                                <li>Add or select the related tags<br/><br/>
+                                    <img src="assets/realhomes/contents/3.3.png" alt=""/><br/><br/></li>
+                                <li>
+                                    Provide the featured image. The image should have minimum width of 830px and minimum height of 323px. The bigger size images will be cropped automatically.
+                                    <br/><br/>
+                                    <img src="assets/realhomes/contents/1.png" alt=""/><br/><br/>
+                                </li>
+                                <li>Publish the post once it is ready.</li>
+                            </ol>
+                        </div>
+                    </article>
+
+                    <article class="hentry" id="add-agent">
+                        <div class="entry-content">
+                            <h1 class="entry-title">Add Agent</h1>
+
+                            Go to <strong>WordPress Admin &gt; Agents &gt; Add New</strong>
+                            <ol>
+                                <li>Provide the agent name <br/><br/>
+                                    <img src="assets/realhomes/contents/22.png" alt=""/><br/><br/></li>
+                                <li>Provide the agent description <br/><br/>
+                                    <img src="assets/realhomes/contents/23.png" alt=""/><br/><br/></li>
+                                <li>
+                                    Provide the featured image. The image should have minimum width of 210px and minimum height of 210px. The bigger size images will be cropped automatically.
+                                    <br/><br/>
+                                    <img src="assets/realhomes/contents/24.png" alt=""/><br/><br/>
+                                </li>
+                                <li>Provide the agent related information <br/><br/>
+                                    <img class="light-border" src="assets/realhomes/contents/25.png" alt=""/><br/><br/></li>
+                                <li>Publish the agent post once it is ready.</li>
+                            </ol>
+                        </div>
+                    </article>
+
+                    <article class="hentry" id="add-property">
+                        <div class="entry-content">
+                            <h1 class="entry-title">Add Property</h1>
+
+                            Go to <strong>WordPress Admin &gt; Properties &gt; Add New</strong>
+                            <ol>
+                                <li>Provide the property title <br/><br/>
+                                    <img src="assets/realhomes/contents/4.png" alt=""/><br/><br/></li>
+                                <li>Add property description <br/><br/>
+                                    <img src="assets/realhomes/contents/5.png" alt=""/><br/><br/></li>
+                                <li>Provide the property gallery images if any <br/><br/>
+                                    <img class="light-border" src="assets/realhomes/contents/6.png" alt=""/><br/><br/></li>
+                                <li>Provide the property featured image (it is a must) <br/><br/>
+                                    <img class="light-border" src="assets/realhomes/contents/15.png" alt=""/><br/><br/></li>
+                                <li>Provide the property related information like price, area, beds, baths, garages and others <br/><br/>
+                                    <img class="light-border" src="assets/realhomes/contents/7.png" alt=""/><br/><br/></li>
+                                <li>Provide the property address and drag the google map pointer to right position. <br/><br/>
+                                    <img class="light-border" src="assets/realhomes/contents/8.png" alt=""/><br/><br/></li>
+                                <li>If your property has any video then provide the video URL and related image <br/><br/>
+                                    <img class="light-border" src="assets/realhomes/contents/9.png" alt=""/><br/><br/></li>
+                                <li>If you want to add this property into featured properties then mark this property as featured. <br/><br/>
+                                    <img class="light-border" src="assets/realhomes/contents/10.png" alt=""/><br/><br/></li>
+                                <li>If you want to add this property in homepage slider then you need to select <strong>Yes</strong> for <strong>Add in Homepage slider</strong> field and provide slider image as required by <strong>Slider Image</strong> field below it.  <br/><br/>
+                                    <img class="light-border" src="assets/realhomes/contents/11.png" alt=""/><br/><br/></li>
+                                <li>Select the type of information that you want to display in agent's box.<br/><br/>
+                                    <img class="light-border" src="assets/realhomes/contents/12.png" alt=""/><br/><br/>
+                                    <ol>
+                                        <li><strong>None</strong> will hide the agent's information box.</li>
+                                        <li><strong>Author profile information</strong> will display the Author( user who added the property ) information.
+                                            <br/> You can configure your user information from <strong>Users > Your Profile</strong>.
+                                            <br/><img class="light-border" src="assets/realhomes/contents/14.png" alt=""/>
+                                            <br/> You can also modify the author from <strong>Author</strong> meta box on property edit page.
+                                            <br/><img class="light-border" src="assets/realhomes/contents/13.png" alt=""/>
+                                        </li>
+                                        <li><strong>Display agent's information</strong> will display the selected agent's information. You can add the agent from <strong>Agents > Add New</strong></li>
+                                    </ol>
+                                    </li>
+                                <li>Provide the additional details if any<br/><br/>
+                                    <img class="light-border" src="assets/realhomes/contents/21.png" alt=""/><br/><br/></li>
+                                <li>Select or Add the property features <br/><br/>
+                                    <img class="light-border" src="assets/realhomes/contents/16.png" alt=""/><br/><br/></li>
+                                <li>Select or Add the property type <br/><br/>
+                                    <img class="light-border" src="assets/realhomes/contents/17.png" alt=""/><br/><br/></li>
+                                <li>Select or Add the property location <br/><br/>
+                                    <img class="light-border" src="assets/realhomes/contents/18.png" alt=""/><br/><br/></li>
+                                <li>Select or Add the property status <br/><br/>
+                                    <img class="light-border" src="assets/realhomes/contents/19.png" alt=""/><br/><br/></li>
+                                <li>If this property is a sub/child property then select the parent property. <br/><br/>
+                                    <img class="light-border" src="assets/realhomes/contents/20.png" alt=""/><br/><br/></li>
+
+                                <li>Publish the property post once it is ready.</li>
+                            </ol>
+                        </div>
+                    </article>
+
+                    <article class="hentry" id="add-listing-page">
+                        <div class="entry-content">
+                            <h1 class="entry-title">Add Properties Listing Page</h1>
+                            <p class="bg-info text-info">
+                                <strong>Note:</strong> If you have imported the demo contents XML then this page is already created.
+                            </p>
+                            Go to <strong>WordPress Admin &gt; Pages &gt; Add New</strong>
+                            <ol>
+                                <li>Provide the page title <br/>
+                                    <img src="assets/realhomes/pages/3.png" alt=""/><br/><br/>
+                                </li>
+                                <li>Select the appropriate page template for properties listing. <br/>
+                                    There are 3 templates for properties listing page.
+                                    <ol>
+                                        <li>Property Listing Template</li>
+                                        <li>Property Grid Listing Template</li>
+                                        <li>Map Based Property Listing Template</li>
+                                    </ol>
+                                    <br/>
+                                    <img class="light-border" src="assets/realhomes/pages/4.png" alt=""/><br/><br/>
+                                </li>
+                                <li>Provide the top banner related information <br/><br/>
+                                    <img class="light-border" src="assets/realhomes/pages/5.png" alt=""/><br/><br/>
+                                </li>
+                                <li><strong>Publish</strong> the page once it is ready.</li>
+                                <li>
+                                    After publishing you need to add the newly created page in menu from <strong>WordPress Admin &gt; Appearance &gt; Menus </strong>
+                                    <br/><br/>
+                                    <img class="light-border" src="assets/realhomes/pages/6.png" alt=""/><br/><br/>
+                                </li>
+                            </ol>
+                        </div>
+                    </article>
+
+                    <article class="hentry" id="add-gallery">
+                        <div class="entry-content">
+                            <h1 class="entry-title">Add Gallery Page</h1>
+                            <p class="bg-info text-info">
+                                <strong>Note:</strong> If you have imported the demo contents XML then this page is already created.
+                            </p>
+                            Go to <strong>WordPress Admin &gt; Pages &gt; Add New</strong>
+                            <ol>
+                                <li>Provide the page title <br/><br/>
+                                    <img src="assets/realhomes/pages/7.png" alt=""/><br/><br/>
+                                </li>
+                                <li>Select the appropriate page template for gallery. <br/>
+                                    There are 3 templates for gallery page.
+                                    <ol>
+                                        <li>Gallery 2 Columns Template</li>
+                                        <li>Gallery 3 Columns Template</li>
+                                        <li>Gallery 4 Columns Template</li>
+                                    </ol>
+                                    <br/>
+                                    <img src="assets/realhomes/pages/8.png" alt=""/><br/>
+                                </li>
+                                <li><strong>Publish</strong> the page once it is ready.</li>
+                                <li>
+                                    After publishing you need to add the newly created page in menu from <strong>WordPress Admin &gt; Appearance &gt; Menus </strong>
+                                    <br/><br/>
+                                    <img class="light-border" src="assets/realhomes/pages/9.png" alt=""/><br/><br/>
+                                </li>
+                            </ol>
+                        </div>
+                    </article>
+
+                    <article class="hentry" id="add-agents">
+                        <div class="entry-content">
+                            <h1 class="entry-title">Add Agents Page</h1>
+                            <p class="bg-info text-info">
+                                <strong>Note:</strong> If you have imported the demo contents XML then this page is already created.
+                            </p>
+                            Go to <strong>WordPress Admin &gt; Pages &gt; Add New</strong>
+                            <ol>
+                                <li>Provide the page title <br/><br/>
+                                    <img src="assets/realhomes/pages/10.png" alt=""/><br/><br/>
+                                </li>
+                                <li>Select the <strong>Agent Listing Template</strong> from <strong>page attributes</strong>.
+                                    <br/><br/>
+                                    <img src="assets/realhomes/pages/11.png" alt=""/><br/><br/>
+                                </li>
+                                <li>Provide the top banner related information <br/><br/>
+                                    <img class="light-border" src="assets/realhomes/pages/12.png" alt=""/><br/><br/>
+                                </li>
+                                <li><strong>Publish</strong> the page once it is ready.</li>
+                                <li>
+                                    After publishing you need to add the newly created page in menu from <strong>WordPress Admin &gt; Appearance &gt; Menus </strong>
+                                    <br/><br/>
+                                    <img class="light-border" src="assets/realhomes/pages/13.png" alt=""/><br/><br/>
+                                </li>
+                            </ol>
+                        </div>
+                    </article>
+
+                    <article class="hentry" id="add-full-width">
+                        <div class="entry-content">
+                            <h1 class="entry-title">Add Full Width Page</h1>
+                            <p class="bg-info text-info">
+                                <strong>Note:</strong> If you have imported the demo contents XML then this page is already created.
+                            </p>
+                            Go to <strong>WordPress Admin &gt; Pages &gt; Add New</strong>
+                            <ol>
+                                <li>Provide the page title <br/><br/>
+                                    <img src="assets/realhomes/pages/14.png" alt=""/><br/><br/>
+                                </li>
+                                <li>Select the <strong>Full Width Template</strong> from <strong>page attributes</strong>.
+                                    <br/><br/>
+                                    <img src="assets/realhomes/pages/15.png" alt=""/><br/><br/>
+                                </li>
+                                <li>Provide the page contents <br/><br/>
+                                    <img class="light-border" src="assets/realhomes/pages/16.png" alt=""/><br/><br/>
+                                </li>
+                                <li>Provide the top banner related information <br/><br/>
+                                    <img class="light-border" src="assets/realhomes/pages/17.png" alt=""/><br/><br/>
+                                </li>
+                                <li><strong>Publish</strong> the page once it is ready.</li>
+                                <li>
+                                    After publishing you need to add the newly created page in menu from <strong>WordPress Admin &gt; Appearance &gt; Menus </strong>
+                                </li>
+                            </ol>
+                        </div>
+                    </article>
+
+                    <article class="hentry" id="add-contact">
+                        <div class="entry-content">
+                            <h1 class="entry-title">Add Contact Us Page</h1>
+                            <p class="bg-info text-info">
+                                <strong>Note:</strong> If you have imported the demo contents XML then this page is already created.
+                            </p>
+                            Go to <strong>WordPress Admin &gt; Pages &gt; Add New</strong>
+                            <ol>
+                                <li>Provide the page title <br/><br/>
+                                    <img src="assets/realhomes/pages/18.png" alt=""/><br/><br/>
+                                </li>
+                                <li>Select the <strong>Contact Template</strong> as template from <strong>page attributes</strong>.
+                                    <br/><br/>
+                                    <img src="assets/realhomes/pages/19.png" alt=""/><br/><br/>
+                                </li>
+                                <li>Provide the top banner related information <br/><br/>
+                                    <img class="light-border" src="assets/realhomes/pages/20.png" alt=""/><br/><br/>
+                                </li>
+                                <li><strong>Publish</strong> the page once it is ready.</li>
+                                <li>
+                                    After publishing you need to add the newly created page in menu from <strong>WordPress Admin &gt; Appearance &gt; Menus </strong>
+                                    <br/><br/>
+                                    <img class="light-border" src="assets/realhomes/pages/21.png" alt=""/><br/><br/>
+                                </li>
+                                <li>
+                                    Next step is to configure <strong>Contact</strong> related theme options from <strong>Appearance > Theme Options > Contact</strong>.
+                                    <br/>
+                                </li>
+                            </ol>
+                        </div>
+                    </article>
+
+                    <article class="hentry" id="contact-theme-options">
+                        <div class="entry-content">
+                            <h1 class="entry-title">Configure Related Theme Options</h1>
+                            Go to <strong>WordPress Admin &gt; Appearance &gt; Theme Options &gt; Contact</strong>
+                            <br/><br/>
+                            <img class="light-border" src="assets/realhomes/pages/23.png" alt=""/><br/><br/>
+                            There you can configure following things.
+                            <br/>
+                            <ol>
+                                <li>Google Map for Contact Us page</li>
+                                <li>Contact details to display on Contact Us page</li>
+                                <li>Contact form heading and target email address to receive contact messages.</li>
+                            </ol>
+                            <hr/>
+                            <h3>1. Configure Google Map on Contact Page</h3>
+                            <p>If you want to display google map on contact page then you need to enable it from theme options as displayed in screen shot below. You need to provide your location's coordinates to display it in google map. You can find your location's latitude and longitude from
+                                <a target="_blank" href="http://itouchmap.com/latlong.html">itouchmap.com/latlong.html</a>. You also need to provide the appropriate zoom level value as displayed in screen shot below.</p>
+                                <img class="light-border" src="assets/realhomes/pages/22.png" alt=""/><br/><br/>
+                            <hr/>
+
+                            <h3>2. Contact details to display</h3>
+                            <p>To display your contact details you can use the theme options displayed in screen shot below.</p>
+                            <br/>
+                            <img class="light-border" src="assets/realhomes/pages/24.png" alt=""/><br/><br/>
+                            <hr/>
+
+                            <h3>3. Contact form heading and target email address</h3>
+                            <p>You can provide contact form heading and target email address to receive contact message in theme options displayed in screen shot below.</p>
+                            <img class="light-border" src="assets/realhomes/pages/25.png" alt=""/><br/><br/>
+                            <p>Save the theme options after making the changes and test the front end of contact page.</p>
+                            <hr/>
+
+                        </div>
+                    </article>
+
+                    <article class="hentry" id="set-up-login-register">
+                        <div class="entry-content">
+                            <h1 class="entry-title">Set Up Login & Register Page</h1>
+
+                            <p>To allow user registration, You need to allow registration from <strong>Settings &gt; General</strong> as displayed in screen shot below. Otherwise you will only have login form on <strong>Login & Registration</strong> page. </p>
+                            <img src="assets/realhomes/member/4.png" alt=""/><br/><br/>
+
+                            <p class="bg-info text-info">
+                                <strong>Important:</strong> From version 1.6 the theme automatically provides modal dialog for Login and Register. So you do not need to follow further details of this section.
+                            </p>
+                            <p class="bg-info text-info">
+                                <strong>Note:</strong> If you have imported the demo contents XML then <strong>Login & Register</strong> page is already created. But you still need to configure related theme options as guided near the end of this section.
+                            </p>
+                            <p>To add <strong>Login & Register</strong> page, Go to <strong>WordPress Admin &gt; Pages &gt; Add New</strong></p>
+                            <ol>
+                                <li>Provide the page title <br/><br/>
+                                    <img src="assets/realhomes/member/1.png" alt=""/><br/><br/>
+                                </li>
+                                <li>Select the <strong>Login & Register Template</strong> from <strong>page attributes</strong>.
+                                    <br/><br/>
+                                    <img src="assets/realhomes/member/2.png" alt=""/><br/><br/>
+                                </li>
+                                <li>Provide the top banner related information <br/><br/>
+                                    <img class="light-border" src="assets/realhomes/member/3.png" alt=""/><br/><br/>
+                                </li>
+                                <li><strong>Publish</strong> the page once it is ready.</li>
+                            </ol>
+
+                            <p>Now you need to go to <strong>Appearance &gt; Theme Options &gt; Members</strong><br/><br/>
+                                <img class="light-border" src="assets/realhomes/member/5.png" alt=""/><br/><br/>
+                                and copy then paste the <strong>Login & Register</strong> page URL in related theme option field. As displayed in the screen shot below. If you want to use header navigation for user login and register then you can also enable that navigation from here.
+                                <br/><br/>
+                                <img class="light-border" src="assets/realhomes/member/6.png" alt=""/><br/><br/>
+                                That's it your <strong>Login & Register</strong> page is ready for use.
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="hentry" id="set-up-property-submit">
+                        <div class="entry-content">
+                            <h1 class="entry-title">Set Up Submit Property Page</h1>
+
+                            <p class="bg-info text-info">
+                                <strong>Note:</strong> If you have imported the demo contents XML then <strong>Submit Property</strong> page is already created. But you still need to configure related theme options as guided near the end of this section.
+                            </p>
+                            <p>To add <strong>Submit Property</strong> page, Go to <strong>WordPress Admin &gt; Pages &gt; Add New</strong></p>
+                            <ol>
+                                <li>Provide the page title <br/><br/>
+                                    <img src="assets/realhomes/member/7.png" alt=""/><br/><br/>
+                                </li>
+                                <li>Select the <strong>Submit Property Template</strong> from <strong>page attributes</strong>.
+                                    <br/><br/>
+                                    <img src="assets/realhomes/member/8.png" alt=""/><br/><br/>
+                                </li>
+                                <li><strong>Publish</strong> the page once it is ready.</li>
+                            </ol>
+
+                            <p>Now you need to go to <strong>Appearance &gt; Theme Options &gt; Members</strong><br/><br/>
+                                <img class="light-border" src="assets/realhomes/member/5.png" alt=""/><br/><br/>
+                                and copy then paste the <strong>Submit Property</strong> page URL in related theme option field. As displayed in the screen shot below.
+                                You can also change the message that will be displayed to user after property submit and you can also specify a target email address that will receive the notice when any user submits a property.
+                                <br/><br/>
+                                <img class="light-border" src="assets/realhomes/member/9.png" alt=""/><br/><br/>
+                                That's it your <strong>Submit Property</strong> page is ready for use.
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="hentry" id="set-up-my-properties">
+                        <div class="entry-content">
+                            <h1 class="entry-title">Set Up My Properties Page</h1>
+
+                            <p class="bg-info text-info">
+                                <strong>Note:</strong> If you have imported the demo contents XML then <strong>My Properties</strong> page is already created. But you still need to configure related theme options as guided near the end of this section.
+                            </p>
+                            <p>To add <strong>Submit Property</strong> page, Go to <strong>WordPress Admin &gt; Pages &gt; Add New</strong></p>
+                            <ol>
+                                <li>Provide the page title <br/><br/>
+                                    <img src="assets/realhomes/member/10.png" alt=""/><br/><br/>
+                                </li>
+                                <li>Select the <strong>My Properties Template</strong> from <strong>page attributes</strong>.
+                                    <br/><br/>
+                                    <img src="assets/realhomes/member/11.png" alt=""/><br/><br/>
+                                </li>
+                                <li><strong>Publish</strong> the page once it is ready.</li>
+                            </ol>
+
+                            <p>Now you need to go to <strong>Appearance &gt; Theme Options &gt; Members</strong><br/><br/>
+                                <img class="light-border" src="assets/realhomes/member/5.png" alt=""/><br/><br/>
+                                Now, copy then paste the <strong>My Properties</strong> page URL in related theme option field. As displayed in the screen shot below.
+                                <br/><br/>
+                                <img class="light-border" src="assets/realhomes/member/12.png" alt=""/><br/><br/>
+                                That's it your <strong>My Properties</strong> page is ready for use.
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="hentry" id="set-up-favorites">
+                        <div class="entry-content">
+                            <h1 class="entry-title">Set Up Favorites Page</h1>
+                            <p>To add <strong>Favorite Properties</strong> page, Go to <strong>WordPress Admin &gt; Pages &gt; Add New</strong></p>
+                            <ol>
+                                <li>Provide the page title <br/><br/>
+                                    <img src="assets/realhomes/member/13.png" alt=""/><br/><br/>
+                                </li>
+                                <li>Select the <strong>Favorite Properties</strong> from <strong>page attributes</strong>.
+                                    <br/><br/>
+                                    <img src="assets/realhomes/member/14.png" alt=""/><br/><br/>
+                                </li>
+                                <li><strong>Publish</strong> the page once it is ready.</li>
+                                <li>
+                                    Now you need to go to <strong>Appearance &gt; Theme Options &gt; Members</strong><br/><br/>
+                                    <img class="light-border" src="assets/realhomes/member/5.png" alt=""/><br/><br/>
+                                </li>
+                                <li>
+                                    Now, copy then paste the <strong>Favorites</strong> page URL in related theme option field. As displayed in the screen shot below.
+                                    <br/><br/>
+                                    <img class="light-border" src="assets/realhomes/member/15.png" alt=""/><br/><br/>
+
+                                </li>
+                            </ol>
+
+                            <p>
+                                That's it your <strong>Favorites</strong> page is ready for use.
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="hentry" id="twitter-widget">
+                        <div class="entry-content">
+                            <h1 class="entry-title">How to set up Twitter Widget</h1>
+                            <p>Latest tweets widget uses <a target="_blank" href="https://wordpress.org/plugins/display-tweets-php/">Display Tweets Plugin</a>.</p>
+                            <ol>
+                                <li>Install the <a target="_blank" href="https://wordpress.org/plugins/display-tweets-php/">Display Tweets Plugin</a> plugin.</li>
+                                <li>
+                                    Now, you need the twitter App's consumer key, consumer secret, access token and access token secret for twitter authentication.
+                                    <br/>
+                                    To get all these keys, You need to register a new twitter app from <a target="_blank" href="https://apps.twitter.com/app/new">following url</a>
+                                    <br/>
+                                    After registering app and generating access token you will have api keys and access token as displayed below
+                                    <br/><br/>
+                                    <img class="light-border" src="assets/realhomes/widgets/3.png" alt=""/><br/><br/>
+                                    API Key is basically consumer key and API secret is consumer secret.
+                                    <br/><br/>
+                                    <img class="light-border" src="assets/realhomes/widgets/4.png" alt=""/><br/><br/>
+                                </li>
+                                <li>After installing and activating the plugin, Go to <strong>Settings &gt; Twitter Feed</strong> and use the keys that you just got from twitter app.
+                                    <br/>
+                                    Save the settings after configuring the keys and related options.
+                                    <br/><br/>
+                                    <img class="light-border" src="assets/realhomes/widgets/2.png" alt=""/><br/><br/>
+                                </li>
+                                <li>Now go to <strong>Appearance &gt; Widgets</strong> and look for <strong>Tweets</strong> widget.
+                                    <br/><br/>
+                                    <img class="light-border" src="assets/realhomes/widgets/5.png" alt=""/><br/><br/>
+                                </li>
+                                <li>Use that tweets widget in a footer column. Provide it a title and save the widget settings.
+                                    <br/><br/>
+                                    <img class="light-border" src="assets/realhomes/widgets/6.png" alt=""/><br/><br/>
+                                </li>
+                                <li>Now check out the front end of your site and you will have a twitter widget working for your site.
+                                    <br/><br/>
+                                    <img class="light-border" src="assets/realhomes/widgets/7.png" alt=""/><br/><br/>
+                                </li>
+                            </ol>
+                        </div>
+                    </article>
+
+                    <article class="hentry" id="featured-properties-widget">
+                        <div class="entry-content">
+                            <h1 class="entry-title">Featured Properties Widget</h1>
+                            <ol>
+                                <li>Go to <strong>Appearance &gt; Widgets</strong> and look for <strong>RealHomes - Featured Properties</strong> widget.
+                                    <br/><br/>
+                                    <img class="light-border" src="assets/realhomes/widgets/8.png" alt=""/><br/><br/>
+                                </li>
+                                <li>Use that widget in a sidebar. Provide its title, number of properties to display and sort order.
+                                    <br/><br/>
+                                    <img class="light-border" src="assets/realhomes/widgets/9.png" alt=""/><br/><br/>
+                                </li>
+                                <li>Now check out the front end of your site and you will have the <strong>Featured Properties</strong> widget working for your site.
+                                    <br/><br/>
+                                    <img class="light-border" src="assets/realhomes/widgets/10.png" alt=""/><br/><br/>
+                                </li>
+                            </ol>
+                        </div>
+                    </article>
+
+                    <article class="hentry" id="property-types-widget">
+                        <div class="entry-content">
+                            <h1 class="entry-title">Property Types Widget</h1>
+                            <ol>
+                                <li>Go to <strong>Appearance &gt; Widgets</strong> and look for <strong>RealHomes - Property Types</strong> widget.
+                                    <br/><br/>
+                                    <img class="light-border" src="assets/realhomes/widgets/11.png" alt=""/><br/><br/>
+                                </li>
+                                <li>Use that widget in a sidebar and provide its title.
+                                    <br/><br/>
+                                    <img class="light-border" src="assets/realhomes/widgets/12.png" alt=""/><br/><br/>
+                                </li>
+                                <li>Now check out the front end of your site and you will have the <strong>Property Types</strong> widget working.
+                                    <br/><br/>
+                                    <img class="light-border" src="assets/realhomes/widgets/13.png" alt=""/><br/><br/>
+                                </li>
+                            </ol>
+                        </div>
+                    </article>
+
+                    <article class="hentry" id="advance-search-widget">
+                        <div class="entry-content">
+                            <h1 class="entry-title">Advance Search Widget</h1>
+                            <ol>
+                                <li>Go to <strong>Appearance &gt; Widgets</strong> and look for <strong>RealHomes - Advance Search</strong> widget.
+                                    <br/><br/>
+                                    <img class="light-border" src="assets/realhomes/widgets/14.png" alt=""/><br/><br/>
+                                </li>
+                                <li>Use that widget in a sidebar and provide its title.
+                                    <br/><br/>
+                                    <img class="light-border" src="assets/realhomes/widgets/15.png" alt=""/><br/><br/>
+                                </li>
+                                <li>Now check out the front end of your site and you will have the <strong>Advance Search</strong> widget working for your site.
+                                    <br/><br/>
+                                    <img class="light-border" src="assets/realhomes/widgets/16.png" alt=""/><br/><br/>
+                                </li>
+                            </ol>
+                        </div>
+                    </article>
+
+                    <article class="hentry" id="idx">
+                        <div class="entry-content">
+                            <h1 class="entry-title">dsIDXpress IDX Plugin</h1>
+                            <p>You can include IDX contents to your site. The easiest way to get started is to use the <a target="_blank" href="https://wordpress.org/plugins/dsidxpress/">dsIDXpress IDX Plugin</a>.</p>
+
+                            <ol>
+                                <li>First you have to register a trial account at <a target="_blank" href="http://www.diversesolutions.com/idx/idx-plugin-for-wordpress">www.diversesolutions.com</a> and get an activation key.</li>
+                                <li>After that you have to install <a target="_blank" href="http://wordpress.org/plugins/dsidxpress/">dsIDXpress (http://wordpress.org/plugins/dsidxpress/)</a> and activate it using activation key you got from registering with divers solutions website. Related screen shot is given below.
+                                    <br/><br/>
+                                    <img class="light-border" src="assets/realhomes/idx/1.png" alt=""/><br/><br/>
+                                </li>
+                                <li>
+                                    After activation you can access your IDX listing using following URL format <strong>www.yourwebsite.com/idx/</strong>
+                                </li>
+                                <li>After activation you have to set <strong>General settings</strong> for IDX as displayed in screen shot below.
+                                    <br/><br/>
+                                    <img class="light-border" src="assets/realhomes/idx/2.png" alt=""/><br/><br/>
+                                </li>
+                                <li>
+                                    Now, You can use dsIDX widgets in sidebars. We have a special template for dsIDX where you can place dsIDX widgets in related sidebar.
+                                    <br/><br/>
+                                    <img class="light-border" src="assets/realhomes/idx/3.png" alt=""/><br/><br/>
+                                </li>
+                                <li>
+                                    <strong>Note: The easiest way to access IDX listing Page is, http://www.yoursitename.com/idx</strong>
+                                    <br/>
+                                    You can add IDX Listing Page in menu as displayed in screen shot below.
+                                    <br/><br/>
+                                    <img class="light-border" src="assets/realhomes/idx/4.png" alt=""/><br/><br/>
+                                </li>
+                            </ol>
+
+                        </div>
+                    </article>
+
+                    <article class="hentry" id="home-idx-search-widget">
+                        <div class="entry-content">
+                            <h1 class="entry-title">dsIDXpress Search Widget on Homepage</h1>
+
+                            <p>Follow the steps below to use the dsIDXpress search widget on homepage.<br/>
+                            <strong>1.</strong> Go to <strong>Appearance >> Widgets</strong></p>
+
+                            <p><strong>2.</strong> Look for the widget area named <strong>Home Search Area</strong> and put <strong>IDX Search</strong> widget with in it.</p>
+                            <img src="assets/realhomes/idx/5.png" alt=""/><br/><br/>
+
+                            <p><strong>3.</strong> After that visit the homepage and you wil have the dsIDXpress search widget in place of Real Homes default search form.</p>
+                            <img src="assets/realhomes/idx/6.png" alt=""/><br/><br/>
+                        </div>
+                    </article>
+
+                    <article class="hentry" id="shortcodes">
+                        <div class="entry-content">
+                            <h1 class="entry-title">Shortcodes</h1>
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <h4>1st List Style</h4>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6">
+                                        <strong>Shortcode Example</strong>
+                                        <br/><br/>
+                                        <img class="light-border" src="assets/realhomes/shortcodes/1.png" alt=""/>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6">
+                                        <strong>Output Example</strong>
+                                        <br/><br/>
+                                        <img class="light-border" src="assets/realhomes/shortcodes/1-1.png" alt=""/>
+                                    </div>
+                                </div>
+                                <br/>
+                                <br/>
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <h4>2nd List Style</h4>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6">
+                                        <strong>Shortcode Example</strong>
+                                        <br/><br/>
+                                        <img class="light-border" src="assets/realhomes/shortcodes/2.png" alt=""/>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6">
+                                        <strong>Output Example</strong>
+                                        <br/><br/>
+                                        <img class="light-border" src="assets/realhomes/shortcodes/2-2.png" alt=""/>
+                                    </div>
+                                </div>
+                                <br/>
+                                <br/>
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <h4>3rd List Style</h4>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6">
+                                        <strong>Shortcode Example</strong>
+                                        <br/><br/>
+                                        <img class="light-border" src="assets/realhomes/shortcodes/3.png" alt=""/>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6">
+                                        <strong>Output Example</strong>
+                                        <br/><br/>
+                                        <img class="light-border" src="assets/realhomes/shortcodes/3-3.png" alt=""/>
+                                    </div>
+                                </div>
+                                <br/>
+                                <br/>
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <h4>4th List Style</h4>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6">
+                                        <strong>Shortcode Example</strong>
+                                        <br/><br/>
+                                        <img class="light-border" src="assets/realhomes/shortcodes/44.png" alt="" />
+                                    </div>
+                                    <div class="col-lg-6 col-md-6">
+                                        <strong>Output Example</strong>
+                                        <br/><br/>
+                                        <img class="light-border" src="assets/realhomes/shortcodes/44-2.png" alt="" />
+                                    </div>
+                                </div>
+                                <br/>
+                                <hr/>
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <h4>Buttons</h4>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6">
+                                        <strong>Shortcode Example</strong>
+                                        <br/><br/>
+                                        <img class="light-border" src="assets/realhomes/shortcodes/4.png" alt=""/>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6">
+                                        <strong>Output Example</strong>
+                                        <br/><br/>
+                                        <img class="light-border" src="assets/realhomes/shortcodes/4-4.png" alt=""/>
+                                    </div>
+                                </div>
+                                <br/>
+                                <hr/>
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <h4>Messages</h4>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6">
+                                        <strong>Shortcode Example</strong>
+                                        <br/><br/>
+                                        <img  class="light-border" src="assets/realhomes/shortcodes/5.png" alt=""/>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6">
+                                        <strong>Output Example</strong>
+                                        <br/><br/>
+                                        <img  class="light-border" src="assets/realhomes/shortcodes/5-5.png" alt=""/>
+                                    </div>
+                                </div>
+                                <br/>
+                                <hr/>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="hentry" id="translation">
+                        <div class="entry-content">
+                            <h1 class="entry-title">Translating The Theme</h1>
+                            This theme is translation ready.
+                            <ol>
+                                <li>For translation to only one language please visit <a target="_blank" href="http://support.inspirythemes.com/knowledgebase/how-to-translate-your-theme-to-your-language/">This Knowledge Base Article</a></li>
+                                <li>For translation to multiple languages you can use <a target="_blank" href="http://wpml.org/">WPML Plugin</a></li>
+                            </ol>
+                        </div>
+                    </article>
+
+                    <article class="hentry" id="modify-styles">
+                        <div class="entry-content">
+                            <h1 class="entry-title">How to Modify Styles</h1>
+                            There are various options available to modify styles in this theme.
+                            <ol>
+                                <li><strong>Theme Options</strong> - Go to 'Appearance &gt; Theme Options' for various styles related sections.</li>
+                                <li><strong>Quick CSS</strong> - Go to 'Appearance &gt; Theme Options &gt; Styling &gt; Quick CSS' to write some short css.</li>
+                                <li><strong>Custom CSS in Child Theme</strong> - 'child-custom.css' file is provided in child theme to add major css changes.
+                                    <br/><br/>
+                                    <img class="light-border" src="assets/realhomes/modify-theme/1.png" alt=""/><br/><br/>
+                                </li>
+                                <li><strong>Custom CSS in Parent Theme</strong> - if you are not using child theme then 'css/custom.css' file is provided in parent theme to add major css changes.
+                                    <br/><br/>
+                                    <img class="light-border" src="assets/realhomes/modify-theme/2.png" alt=""/><br/><br/>
+                                </li>
+                            </ol>
+                        </div>
+                    </article>
+
+                    <article class="hentry" id="hire-customization">
+                        <div class="entry-content">
+                            <h1 class="entry-title">Hire Customization Services</h1>
+                            <p>
+                                If you need some additional features OR modification in existing features then you can contact theme customization service providers like
+                                <ol>
+                                    <li><a target="_blank" href="http://werkpress.com/">http://werkpress.com/</a></li>
+                                    <li><a target="_blank" href="http://psdtohtmlwp.com/">http://psdtohtmlwp.com/</a></li>
+                                    <li><a target="_blank" href="https://codeable.io/">https://codeable.io/</a></li>
+                                </ol>
+                            </p>
+                        </div>
+                    </article>
+
+                </main>
+            </div>
+        </div>
+    </div><!-- site container end -->
+    <script type="text/javascript" src="assets/js/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="assets/js/jquery-migrate-1.2.1.js"></script>
+    <script type="text/javascript" src="assets/js/lightbox.min.js"></script>
+    <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="assets/js/purl.js"></script>
+    <script type="text/javascript" src="assets/js/custom.js"></script>
+</body>
+</html>

@@ -1,0 +1,252 @@
+/*START TOP BAR STYLE*/
+.top-has-nav{
+  .top-bar-left,
+  .top-bar-right{
+    @include respond-to(medium-desktop-to-mini-phone){
+      width: 70% !important;
+    }
+  }
+  .top-bar-left.top-nav-area,
+  .top-bar-right.top-nav-area{
+    @include respond-to(medium-desktop-to-mini-phone){
+      width: 30% !important;
+    }
+  }
+}
+.top-bar{
+  background-color: $black;
+  position: relative;
+  z-index: 12;
+  //padding: 10px 0;
+  .top-inner{
+    font-size: 0;
+    line-height: normal;
+  }
+  ul{
+    margin: 0;
+    line-height: normal;
+    font-size: 0;
+  }
+  .top-bar-left{
+    float: left;
+    text-align: left;
+    width: 50%;
+    position: relative;
+    &.houzez-top-bar-full{
+      width: 100% !important;
+    }
+  }
+  .top-bar-right{
+    float: left;
+    text-align: right;
+    width: 50%;
+    position: relative;
+    &.houzez-top-bar-full{
+      width: 100% !important;
+    }
+  }
+  .top-nav{
+    > ul{
+      > li{
+        > a{
+          padding: 0 12px;
+          &:hover{
+            background-color: transparent;
+          }
+        }
+      }
+      .has-child > a:after{
+        content: '\f107';
+      }
+      ul{
+        top: 50px;
+        width: 180px;
+        a{
+          padding: 10px 15px;
+          font-size: 12px;
+        }
+        li{
+          text-transform: capitalize;
+          ul.sub-menu{
+            right: -180px;
+          }
+        }
+        .has-child > a:after {
+          content: '\f105';
+        }
+      }
+      li.active{
+        > a{
+          color: $hover;
+          background-color: transparent;
+        }
+        ul{
+          top: 32px;
+        }
+      }
+    }
+  }
+  .nav-dropdown{
+    width: 240px;
+    a{
+      font-size: 12px;
+      line-height: 18px;
+      padding: 12px 14px;
+    }
+    .expand-me{
+      line-height: 41px;
+    }
+  }
+  .mobile-nav{
+    display: none;
+    padding: 4px 0;
+    .nav-trigger.mobile-open + .nav-dropdown{
+      top: 32px;
+    }
+  }
+  .dropdown-menu {
+    background-color: $black;
+    border-radius: 0;
+    margin-top: 0;
+    border: 0;
+    min-width: 100%;
+    > li{
+      @extend %animation;
+      cursor: pointer;
+      display: block;
+      padding: 6px 8px;
+      font-size: 12px;
+      color: $white;
+      line-height: 1.42857;
+      &:hover{
+        color: $anchor;
+      }
+      > a {
+        font-size: 12px;
+        padding: 0;
+        color: $white;
+        &:hover{
+          color: $anchor;
+          background-color: transparent;
+        }
+      }
+    }
+  }
+  @include respond-to(medium-desktop-to-mini-phone){
+    .top-bar-left.top-nav-area{
+      .mobile-nav{
+        float: left;
+      }
+    }
+    .top-bar-right.top-nav-area{
+      .mobile-nav{
+        float: right;
+      }
+      .nav-dropdown{
+        left: auto;
+        right: 0;
+        > ul:before{
+          left: auto;
+          right: 2px;
+        }
+      }
+    }
+    .top-nav{
+      display: none;
+    }
+    .mobile-nav{
+      display: block;
+    }
+  }
+  @include respond-to(phone){
+      &.hide-top-bar-mobile{
+      display: none !important;
+    }
+  }
+}
+.top-contact{
+  ul{
+    list-style: none;
+    font-size: 0;
+  }
+  li{
+    color: $white;
+    font-size: 13px;
+    line-height: 30px;
+    display: inline-block;
+    margin-right: 23px;
+    font-weight: 400;
+    &:last-child{
+      margin: 0;
+    }
+  }
+  .top-bar-phone .fa,
+  .top-bar-contact .fa{
+    position: relative;
+    top: 1px;
+  }
+  a{
+    color: $white;
+  }
+  .fa{
+    font-size: 16px;
+    margin-right: 5px;
+  }
+  @include respond-to(tablet-landscape-desktop){
+    li{
+      margin-right: 16px;
+    }
+    span{
+      display: none;
+    }
+  }
+  @include respond-to(tablet-portrait){
+    li{
+      margin-right: 16px;
+    }
+    span{
+      display: none;
+    }
+  }
+}
+.top-bar-social{
+  a{
+    margin-right: 8px;
+    font-size: 16px;
+    color: $white;
+    &:last-child{
+      margin: 0;
+    }
+  }
+  .fa{
+    margin: 0;
+  }
+}
+.top-drop-downs{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: 0;
+  > li{
+    font-size: 12px;
+    display: inline-block;
+    position: relative;
+    margin-right: 28px;
+    &:last-child{
+      margin: 0;
+    }
+  }
+  .btn{
+    border-radius: 0;
+    font-size: 12px;
+    padding: 7px 0;
+    color: $white;
+    background-color: transparent;
+    &:hover{
+      color: $anchor;
+    }
+  }
+  .fa{
+    margin-left: 18px;
+  }
+}

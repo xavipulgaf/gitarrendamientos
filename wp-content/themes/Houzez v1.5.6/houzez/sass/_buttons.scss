@@ -1,0 +1,57 @@
+/* Buttons
+/* ------------------------------------------------------ */
+.btn {
+  //outline: none !important;
+  //display: inline-block;
+  //white-space: nowrap;
+  //vertical-align: middle;
+  //-ms-touch-action: manipulation;
+  //touch-action: manipulation;
+  //cursor: pointer;
+  //-webkit-user-select: none;
+  //-moz-user-select: none;
+  //-ms-user-select: none;
+  //user-select: none;
+  //background-image: none;
+  //border: 1px solid transparent;
+  //@include border-radius(4px);
+  //padding: 11px 15px;
+  //@include typography(14px, 1.42857, 0, 500, inherit, center);
+  .fa.fa-left{
+    margin-right: 8px;
+  }
+  .fa.fa-right{
+    margin-left: 8px;
+  }
+  .fa.pull-left{
+    line-height: 20px;
+  }
+  @include respond-to(tablet-landscape-desktop){
+    padding: 15px 15px;
+    font-size: 14px;
+  }
+  @include respond-to(tablet-portrait){
+    padding: 15px 15px;
+    font-size: 14px;
+  }
+}
+
+
+.btn-long{
+  padding: 10px 55px;
+}
+//.btn-lg{
+  //padding: 12px 18px !important;
+  //font-size: 18px !important;
+  //line-height: 1.3333333 !important;
+  //border-radius: 4px;
+//}
+
+.btn-md{
+  padding: 8px 15px;
+}
+//.btn-sm{
+  //padding: 5px 10px !important;
+  //@include typography(12px, 1.42857, 0, 400, inherit, center);
+  //border-radius: 3px;
+//}
